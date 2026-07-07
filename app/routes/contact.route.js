@@ -9,6 +9,7 @@ router
   .post(contacts.create)
   .delete(contacts.deleteAll);
 
+router.route("/").get(contacts.findAll).post(contacts.create);
 router.route("/favorite").get(contacts.findAllFavorite);
 
 router

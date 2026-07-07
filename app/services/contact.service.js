@@ -12,6 +12,8 @@ class ContactService {
       address: payload.address,
       phone: payload.phone,
       favorite: payload.favorite,
+      hasHobbies: payload.hasHobbies,
+      hobbies: payload.hobbies,
     };
 
     Object.keys(contact).forEach(
